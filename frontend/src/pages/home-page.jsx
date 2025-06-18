@@ -7,7 +7,7 @@ import { loadBoards } from '../store/board.actions'
 import { Icon, Loader } from 'monday-ui-react-core'
 import { MoveArrowRight, LogIn } from 'monday-ui-react-core/icons'
 
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/Tiusdei.png'
 
 import heroOne from '../assets/img/hero-1.jpg'
 import heroTwo from '../assets/img/hero-2.jpg'
@@ -34,7 +34,7 @@ export function HomePage() {
 
             <header className="home-page-top-header"
                 onClick={scrollTop}>
-                <div className='home-page-logo-container'><img className="header-logo" src={logo} alt="logo" />Anyday<span>.com</span></div>
+                <div className='home-page-logo-container'><img className="header-logo" src={logo} alt="logo" /></div>
                 <div className='home-page-login-signup-container'>
                 {loggedInUser?<span className="home-page-login-signup-link"> Welcome {loggedInUser.fullname}</span>
                     :
