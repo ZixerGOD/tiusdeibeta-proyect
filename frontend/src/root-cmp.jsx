@@ -2,7 +2,6 @@ import React from 'react'
 import { Routes, Route } from 'react-router'
 
 import { UserDetails } from './pages/user-details'
-import { HomePage } from './pages/home-page'
 import { BoardDetails } from './pages/board-details'
 import { Login } from './pages/login-page'
 import { SignUp } from './pages/sign-up'
@@ -15,7 +14,7 @@ export function RootCmp() {
     return <div>
         <main>
             <Routes>
-                <Route element={<HomePage />} path="/" />
+                <Route element={<Login />} path="/" />
                 <Route element={<BoardDetails />} path="/board/:boardId" />
                 <Route element={<Kanban />} path="/:boardId/views/kanban" />
                 <Route element={<Dashboard />} path="/:boardId/views/dashboard" />

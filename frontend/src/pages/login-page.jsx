@@ -6,7 +6,7 @@ import { userService } from '../services/user.service.js'
 import { LoginStepTwo } from "../cmps/login-steps/login-step-two";
 import { LoginStepOne } from "../cmps/login-steps/login-step-one";
 
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/Tiusdei.png'
 
 export function Login() {
     const [loginPaging, setLoginPaging] = useState("login-step-1")
@@ -30,7 +30,7 @@ export function Login() {
     return (
         <section className='login-page'>
             <Link to='/' className="top-header">
-              <div className='login-signup-logo'>  <img className="login-logo" src={logo} alt="logo" /> Anyday<span>.com</span> </div>
+              <div className='login-signup-logo'>  <img className="login-logo" src={logo} alt="logo" /></div>
             </Link>
             <LoginDynamicCmp
                 users={users}

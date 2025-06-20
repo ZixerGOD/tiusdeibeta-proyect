@@ -1,13 +1,13 @@
-import { HomePage } from './pages/home-page.jsx'
 import { AdminApp } from './pages/admin-app.jsx'
 import { BoardDetails } from './pages/board-details.jsx'
+import { Login } from './pages/login-page.jsx'
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
     {
         path: '/',
-        component: <HomePage />,
-        label: 'Home',
+        component: <Login />,
+        label: 'Login',
     },
     {
         path: 'board-details',
